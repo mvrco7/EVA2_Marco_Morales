@@ -41,6 +41,9 @@ Partial Class Form1
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.btnBuscar = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnActualizar = New System.Windows.Forms.Button()
+        Me.btnVerDatosBD = New System.Windows.Forms.Button()
+        Me.btnEliminar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -186,11 +189,11 @@ Partial Class Form1
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(97, 337)
+        Me.btnGuardar.Location = New System.Drawing.Point(12, 332)
         Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(116, 23)
+        Me.btnGuardar.Size = New System.Drawing.Size(102, 23)
         Me.btnGuardar.TabIndex = 17
-        Me.btnGuardar.Text = "Guardar Mysql"
+        Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = True
         '
         'btnBuscar
@@ -211,11 +214,41 @@ Partial Class Form1
         Me.Label3.TabIndex = 19
         Me.Label3.Text = "Ejemplo:123456789"
         '
+        'btnActualizar
+        '
+        Me.btnActualizar.Location = New System.Drawing.Point(162, 332)
+        Me.btnActualizar.Name = "btnActualizar"
+        Me.btnActualizar.Size = New System.Drawing.Size(103, 23)
+        Me.btnActualizar.TabIndex = 20
+        Me.btnActualizar.Text = "Actualizar"
+        Me.btnActualizar.UseVisualStyleBackColor = True
+        '
+        'btnVerDatosBD
+        '
+        Me.btnVerDatosBD.Location = New System.Drawing.Point(162, 371)
+        Me.btnVerDatosBD.Name = "btnVerDatosBD"
+        Me.btnVerDatosBD.Size = New System.Drawing.Size(103, 23)
+        Me.btnVerDatosBD.TabIndex = 21
+        Me.btnVerDatosBD.Text = "Ver Datos BD"
+        Me.btnVerDatosBD.UseVisualStyleBackColor = True
+        '
+        'btnEliminar
+        '
+        Me.btnEliminar.Location = New System.Drawing.Point(12, 371)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(102, 23)
+        Me.btnEliminar.TabIndex = 22
+        Me.btnEliminar.Text = "Eliminar"
+        Me.btnEliminar.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(292, 386)
+        Me.ClientSize = New System.Drawing.Size(292, 419)
+        Me.Controls.Add(Me.btnEliminar)
+        Me.Controls.Add(Me.btnVerDatosBD)
+        Me.Controls.Add(Me.btnActualizar)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnBuscar)
         Me.Controls.Add(Me.btnGuardar)
@@ -236,7 +269,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form1"
-        Me.Text = "EVA 2 - MySql"
+        Me.Text = "EPE2 - MySql"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -261,4 +294,7 @@ Partial Class Form1
     Friend WithEvents btnGuardar As Button
     Friend WithEvents btnBuscar As Button
     Friend WithEvents Label3 As Label
+    Friend WithEvents btnActualizar As Button
+    Friend WithEvents btnVerDatosBD As Button
+    Friend WithEvents btnEliminar As Button
 End Class
